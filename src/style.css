@@ -1,3 +1,7 @@
+* {
+    font-family: "Quicksand";
+    font-style: normal;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -6,6 +10,11 @@ body {
     transition: background-color 0.3s ease, color 0.3 ease;
 }
 
+h1 {
+  font-family: "WindSong", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
 body.light-mode {
     background-color: #ffffff;
     color: #212529
@@ -24,11 +33,6 @@ body.dark-mode div.bg-light {
     border-color: #2d2d2d;
 }
 
-body.dark-mode p.text-muted,
-body.dark-mode small.text-muted {
-    color: #adb5db;
-}
-
 body.dark-mode input,
 body.dark-mode textarea {
     background-color: #2b2b2b;
@@ -40,4 +44,64 @@ body.dark-mode input:focus,
 body.dark-mode textarea:focus {
     background-color: #333333;
     color: #ffffff;
+}
+
+.hab-html {
+    background-color: #ffe6d5;
+    color: #ff6600;
+}
+
+body.dark-mode .hab-html {
+    background-color: #eb5e00;
+    color: #f4d6c2;
+}
+
+.hab-boots {
+    background-color: #ecd1fe;
+    color: #29047e;
+}
+
+body.dark-mode .hab-boots {
+    background-color: #29047e;
+    color: #ecd1fe;
+}
+
+.hab-js {
+    background-color: #fff7d4;
+    color: #7d7705;
+}
+
+body.dark-mode .hab-js {
+    background-color: goldenrod;
+    color: #f4d6c2;
+}
+
+.hab-git {
+    background-color: darkseagreen;
+    color: darkgreen;
+}
+
+body.dark-mode .hab-git {
+    background-color: rgb(7, 73, 7);
+    color: palegreen;
+}
+
+.navbar-collapse {
+    z-index: 9999;
+    background-color: #212529; /* Mantiene el fondo oscuro del menú al desplegarse */
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+nav .navbar-nav + .navbar-brand,
+nav.navbar .navbar-brand {
+    .molle-regular-italic {
+  font-family: "Molle", cursive;
+  font-style: italic;
+}
+}
+nav.navbar .navbar-brand {
+    font-family: "Molle", cursive;
+    font-size: 1.75rem; 
+    font-weight: 400;
 }

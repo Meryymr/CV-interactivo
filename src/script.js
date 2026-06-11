@@ -23,8 +23,8 @@ inputNombre.addEventListener('change', (evento) => {
     const valorTexto = evento.target.value.trim();
     if (valorTexto.length < 3){
         feedbackNombre.textContent = "El nombre debe tener al menos 3 caracteres"; 
-        inputNombre.classList.add('is-valid'); 
-        inputNombre.classList.remove('is-valid')
+        inputNombre.classList.add('is-invalid'); 
+        inputNombre.classList.remove('is-valid');
     } else {
         feedbackNombre.textContent = ""; 
         inputNombre.classList.remove('is-invalid'); 
