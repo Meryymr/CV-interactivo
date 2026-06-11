@@ -1,0 +1,43 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    transition: background-color 0.3s ease, color 0.3 ease;
+}
+
+body.light-mode {
+    background-color: #ffffff;
+    color: #212529
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #f8f9fa;
+}
+
+/*Ajustes modo oscuro*/
+body.dark-mode .card,
+body.dark-mode div.bg-light {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-color: #2d2d2d;
+}
+
+body.dark-mode p.text-muted,
+body.dark-mode small.text-muted {
+    color: #adb5db;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+    background-color: #2b2b2b;
+    border-color: #404040;
+    color: #ffffff;
+}
+
+body.dark-mode input:focus,
+body.dark-mode textarea:focus {
+    background-color: #333333;
+    color: #ffffff;
+}
